@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arora Travels | Cab Booking</title>
+<meta name="description" content="Arora Travels — safe, comfortable and affordable cab booking for Punjab routes, outstation, airport and station transfers.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#07111f;color:#eef6ff}
+a{text-decoration:none;color:inherit}.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;position:absolute;top:0;width:100%;z-index:5}
+.logo{font-size:24px;font-weight:900}.logo span{color:#ffd21c}.navlinks{display:flex;gap:25px;font-weight:700}.navbtn{background:#ffd21c;color:#07111f;padding:11px 17px;border-radius:999px;font-weight:900}
+.hero{min-height:720px;padding:150px 7% 70px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;background:radial-gradient(circle at 80% 25%,#12375d,transparent 35%),linear-gradient(135deg,#06101c,#0b2035)}
+.badge{display:inline-block;background:#ffffff12;border:1px solid #ffffff22;padding:9px 14px;border-radius:999px;color:#ffd21c;font-weight:800}
+h1{font-size:clamp(44px,6vw,76px);line-height:.98;margin:18px 0}.hero p{font-size:19px;color:#bfd0df;max-width:620px;line-height:1.6}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.primary,.secondary{padding:15px 22px;border-radius:14px;font-weight:900}.primary{background:#ffd21c;color:#07111f}.secondary{border:1px solid #ffffff2b;background:#ffffff0b}
+.booking{background:#fff;color:#102033;border-radius:25px;padding:25px;box-shadow:0 25px 70px #0008}.booking h2{margin:0 0 15px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:12px;font-weight:800;color:#607080}input,select{width:100%;padding:13px;border:1px solid #dce3ea;border-radius:11px;margin-top:5px;font:inherit}.full{grid-column:1/-1}.book{width:100%;border:0;background:#07111f;color:#ffd21c;padding:15px;border-radius:12px;font-size:16px;font-weight:900;margin-top:13px;cursor:pointer}
+.section{padding:75px 7%}.section h2{font-size:38px;margin:0 0 10px}.muted{color:#7f94a8}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}.card{background:#0d1d2e;border:1px solid #ffffff12;padding:23px;border-radius:20px}.icon{font-size:32px}.card h3{margin:13px 0 7px}.card p{color:#9fb0c0;line-height:1.5}
+.routes{background:#091827}.route{display:flex;justify-content:space-between;align-items:center;background:#10253a;padding:18px 20px;border-radius:15px;margin:10px 0}.cars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.car{background:#fff;color:#122235;border-radius:20px;overflow:hidden}.car .pic{height:150px;background:linear-gradient(135deg,#dfe7ef,#8294a7);display:grid;place-items:center;font-size:65px}.car div:last-child{padding:18px}.pill{display:inline-block;background:#eef2f6;padding:5px 9px;border-radius:20px;font-size:12px;margin:3px}
+.review{background:#0d1d2e;border-radius:18px;padding:22px}.stars{color:#ffd21c}.cta{margin:0 7% 70px;background:linear-gradient(100deg,#ffd21c,#ffed86);color:#07111f;border-radius:25px;padding:35px;display:flex;justify-content:space-between;gap:20px;align-items:center}.cta h2{margin:0;font-size:34px}.footer{padding:30px 7%;border-top:1px solid #ffffff12;color:#9fb0c0;display:flex;justify-content:space-between}
+@media(max-width:1100px){.cars{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:850px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:125px}.cards{grid-template-columns:1fr 1fr}.cars{grid-template-columns:1fr}.cta{margin:0 4% 45px;flex-direction:column;align-items:flex-start}.footer{flex-direction:column;gap:10px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.full{grid-column:auto}.hero{min-height:auto;padding-bottom:45px}.section{padding:55px 5%}.nav{padding:16px 5%}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="logo">🚕 ARORA <span>TRAVEL</span></div><div class="navlinks"><a href="#services">Services</a><a href="#routes">Routes</a><a href="#cars">Cars</a><a href="#reviews">Reviews</a></div><a class="navbtn" href="https://wa.me/917719600787?text=Hello%20Arora%20Travels%2C%20I%20want%20to%20book%20a%20cab.">WhatsApp</a></nav>
+
+<section class="hero">
+<div><span class="badge">⭐ Trusted local & outstation cab service</span><h1>Your Ride.<br><span style="color:#ffd21c">Your Comfort.</span><br>Our Priority.</h1>
+<p>Book clean, comfortable cabs with on-time pickup, transparent fares and experienced drivers. Jalalabad ⇄ Himachal, Chandigarh & Delhi routes.</p>
+<div class="ctas"><a class="primary" href="#booking">🚕 Book Your Cab</a><a class="secondary" href="tel:+917719600787">📞 Call 7719600787</a></div></div>
+<div class="booking" id="booking"><h2>Quick Booking</h2><div class="grid">
+<label>Pickup<input id="pickup" placeholder="e.g. Jalalabad"></label><label>Drop<input id="drop" placeholder="e.g. Chandigarh"></label>
+<label>Date<input id="date" type="date"></label><label>Time<input id="time" type="time"></label>
+<label>Passengers<select id="pass"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label>
+<label>Trip<select id="trip"><option>One Way</option><option>Round Trip</option></select></label>
+</div><button class="book" onclick="book()">💬 Continue Booking on WhatsApp</button><p style="font-size:12px;color:#687889;margin-bottom:0">Your request will open WhatsApp with booking details.</p></div>
+</section>
+
+<section class="section" id="services"><h2>Everything you need in one ride</h2><p class="muted">Simple booking. Comfortable travel. Helpful service.</p>
+<div class="cards"><div class="card"><div class="icon">🛣️</div><h3>Outstation Trips</h3><p>Comfortable intercity travel with advance booking.</p></div><div class="card"><div class="icon">✈️</div><h3>Airport Transfer</h3><p>Pickup and drop arranged around your travel schedule.</p></div><div class="card"><div class="icon">🚉</div><h3>Station Pickup</h3><p>Convenient railway station pickup and drop service.</p></div><div class="card"><div class="icon">📦</div><h3>Parcel Service</h3><p>Ask us about parcel acceptance on available routes.</p></div></div></section>
+
+<section class="section routes" id="routes"><h2>Popular Routes</h2><p class="muted">Tell us your pickup and destination for a booking quote.</p>
+<div class="route"><b>Jalalabad → Himachal</b><span>🚕 Book Now</span></div><div class="route"><b>Jalalabad → Chandigarh</b><span>🚕 Book Now</span></div><div class="route"><b>Chandigarh → Jalalabad</b><span>🚕 Book Now</span></div><div class="route"><b>Jalalabad → Delhi</b><span>📍 Ask for availability</span></div></section>
+
+<section class="section" id="cars"><h2>Choose your comfort</h2><p class="muted">Vehicle availability can vary by route and booking time.</p><div class="cars">
+<div class="car"><div class="pic">🚘</div><div><h3>Hyundai Aura</h3><span class="pill">AC</span><span class="pill">4 passengers</span><span class="pill">Budget friendly</span><p><b>Fare:</b> Get route quote</p><a class="primary" style="display:inline-block;margin-top:8px;padding:10px 14px" href="https://wa.me/917719600787?text=Hello%20Arora%20Travel%2C%20I%20want%20to%20book%20Hyundai%20Aura.">Book Aura</a></div></div>
+<div class="car"><div class="pic">🚗</div><div><h3>Dzire</h3><span class="pill">AC</span><span class="pill">4 passengers</span><span class="pill">Comfort</span><p><b>Fare:</b> Get route quote</p><a class="primary" style="display:inline-block;margin-top:8px;padding:10px 14px" href="https://wa.me/917719600787?text=Hello%20Arora%20Travel%2C%20I%20want%20to%20book%20Dzire.">Book Dzire</a></div></div>
+<div class="car"><div class="pic">🚙</div><div><h3>Ertiga</h3><span class="pill">AC</span><span class="pill">6–7 passengers</span><span class="pill">Family</span><p><b>Fare:</b> Get route quote</p><a class="primary" style="display:inline-block;margin-top:8px;padding:10px 14px" href="https://wa.me/917719600787?text=Hello%20Arora%20Travel%2C%20I%20want%20to%20book%20Ertiga.">Book Ertiga</a></div></div>
+<div class="car"><div class="pic">🚐</div><div><h3>Toyota Rumion</h3><span class="pill">AC</span><span class="pill">6–7 passengers</span><span class="pill">Spacious</span><p><b>Fare:</b> Get route quote</p><a class="primary" style="display:inline-block;margin-top:8px;padding:10px 14px" href="https://wa.me/917719600787?text=Hello%20Arora%20Travel%2C%20I%20want%20to%20book%20Rumion.">Book Rumion</a></div></div>
+<div class="car"><div class="pic">🚘</div><div><h3>Toyota Crysta</h3><span class="pill">AC</span><span class="pill">6–7 passengers</span><span class="pill">Premium</span><p><b>Fare:</b> Get route quote</p><a class="primary" style="display:inline-block;margin-top:8px;padding:10px 14px" href="https://wa.me/917719600787?text=Hello%20Arora%20Travel%2C%20I%20want%20to%20book%20Crysta.">Book Crysta</a></div></div>
+</div></section>
+
+<section class="section" id="reviews"><h2>Passengers choose convenience</h2><div class="cards"><div class="review"><div class="stars">★★★★★</div><p>“Clean car and smooth journey. Booking was easy.”</p><b>— Passenger</b></div><div class="review"><div class="stars">★★★★★</div><p>“Pickup coordination was simple and convenient.”</p><b>— Passenger</b></div><div class="review"><div class="stars">★★★★★</div><p>“Good option for planned outstation travel.”</p><b>— Passenger</b></div></div></section>
+
+<div class="cta"><div><h2>Ready to book your ride?</h2><p>Message Arora Travels on WhatsApp and share your pickup, drop, date and passengers.</p></div><a class="primary" href="https://wa.me/917719600787?text=Hello%20Arora%20Travels%2C%20I%20want%20to%20book%20a%20cab.">💬 Book on WhatsApp</a></div>
+<footer class="footer"><span>© 2026 Arora Travel</span><span>📞 7719600787 &nbsp; • &nbsp; Owner: Jay Arora</span></footer>
+
+<script>
+function book(){
+ const p=document.getElementById('pickup').value||'Not specified',d=document.getElementById('drop').value||'Not specified';
+ const date=document.getElementById('date').value||'Not specified',time=document.getElementById('time').value||'Not specified';
+ const pass=document.getElementById('pass').value,trip=document.getElementById('trip').value;
+ const msg=`Hello Arora Travels! 🚕%0A%0AI want to book a cab.%0A📍 Pickup: ${encodeURIComponent(p)}%0A📍 Drop: ${encodeURIComponent(d)}%0A📅 Date: ${encodeURIComponent(date)}%0A⏰ Time: ${encodeURIComponent(time)}%0A👥 Passengers: ${encodeURIComponent(pass)}%0A🔄 Trip: ${encodeURIComponent(trip)}`;
+ window.open('https://wa.me/917719600787?text='+msg,'_blank');
+}
+</script>
+</body></html>
